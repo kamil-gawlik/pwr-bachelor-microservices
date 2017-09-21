@@ -2,27 +2,22 @@ package io.swagger.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModelProperty;
+import org.springframework.stereotype.Component;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
 /**
  * ServiceInformation
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-09-20T17:09:45.498Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-09-21T16:14:04.338Z")
+@Component
 public class ServiceInformation   {
-
-  private final static SingleEndpointConfiguration square = new SingleEndpointConfiguration().addFieldsItem(
-          new FieldDefinition().name("value").type(FieldDefinition.TypeEnum.INT).required(true)
-  ).method(SingleEndpointConfiguration.MethodEnum.GET)
-          .path("/sqrt");
-
   @JsonProperty("endpoints")
-  private List<SingleEndpointConfiguration> endpoints = new ArrayList<SingleEndpointConfiguration>(Arrays.asList(ServiceInformation.square));
+  private List<SingleEndpointConfiguration> endpoints = new ArrayList<SingleEndpointConfiguration>();
 
   public ServiceInformation endpoints(List<SingleEndpointConfiguration> endpoints) {
     this.endpoints = endpoints;
