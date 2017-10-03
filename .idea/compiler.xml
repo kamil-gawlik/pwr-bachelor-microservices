@@ -8,11 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="discovery-server" />
         <module name="swagger-spring" />
+        <module name="task-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="discovery-server" target="1.8" />
       <module name="swagger-spring" target="1.7" />
+      <module name="task-api" target="1.8" />
+      <module name="tasks-api_main" target="1.8" />
+      <module name="tasks-api_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
