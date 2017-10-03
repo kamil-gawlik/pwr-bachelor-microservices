@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-frontend/micro-frontend.iml" filepath="$PROJECT_DIR$/micro-frontend/micro-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-generator/spring-server/swagger-spring.iml" filepath="$PROJECT_DIR$/service-generator/spring-server/swagger-spring.iml" />
     </modules>
   </component>
 </project>
