@@ -45,6 +45,7 @@ public class BaseMathApi {
     }
 
     @RequestMapping(value = SQRT_PATH,
+            consumes = {"application/json"},
             produces = {"application/json"},
             method = RequestMethod.POST
     )
@@ -74,6 +75,7 @@ public class BaseMathApi {
     }
 
     @RequestMapping(value = ADD_PATH,
+            consumes = {"application/json"},
             produces = {"application/json"},
             method = RequestMethod.POST
     )

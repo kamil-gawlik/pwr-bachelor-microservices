@@ -8,6 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import java.util.Optional;
+
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2017-09-21T16:14:04.338Z")
 
 @Controller
@@ -16,9 +19,17 @@ public class ServicesApiController implements ServicesApi {
     @Autowired
     ServiceInformation serviceInformation;
 
-    public ResponseEntity<SingleEndpointConfiguration> funcfuncId(@ApiParam(value = "ID of func to return",required=true ) @PathVariable("service_name") String serviceName) {
+    public ResponseEntity<SingleEndpointConfiguration> funcfuncId(@ApiParam(value = "ID of func to return", required = true) @PathVariable("service_name") String serviceName) {
         // do some magic!
-        return new ResponseEntity<SingleEndpointConfiguration>(HttpStatus.OK);
+        Optional<SingleEndpointConfiguration> conf = serviceInformation.getEndpoints()
+                .stream()
+                .filter(e -> e.getName().toLowerCase().equals(serviceName.toLowerCase()))
+                .findFirst();
+
+        if(!conf.isPresent()){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<SingleEndpointConfiguration>(conf.get(), HttpStatus.OK);
     }
 
     public ResponseEntity<ServiceInformation> servicesGet() {

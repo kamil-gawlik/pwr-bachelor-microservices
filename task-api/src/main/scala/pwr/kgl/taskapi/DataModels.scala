@@ -1,6 +1,6 @@
 package pwr.kgl.taskapi
 
-case class ServiceInformation(val enpoints: List[SingleEndpointConfiguration])
+case class ServiceInformation(val endpoints: List[SingleEndpointConfiguration])
 
 case class SingleEndpointConfiguration(
                                         val name: String,

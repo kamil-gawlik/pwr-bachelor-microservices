@@ -2,23 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18e4b68-2453-49b7-b552-404e55ecf521" name="Default" comment="fix for frontend?">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/AppConfig.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformations.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/FirstEndpoint.scala" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/target/classes/pwr/kgl/taskapi/FirstEndpoint.class" afterPath="$PROJECT_DIR$/task-api/target/classes/pwr/kgl/taskapi/FirstEndpoint.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/RFC3339DateFormat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/Swagger2SpringBoot$ExitException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/Swagger2SpringBoot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiOriginFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiResponseMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddJson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddReponse$AddReponseBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddReponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtJson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtResponse$SqrtResponseBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/NotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ServicesApi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ServicesApiController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/configuration/HomeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/configuration/SwaggerDocumentationConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/FieldDefinition$TypeEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/FieldDefinition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/ServiceInformation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/SingleEndpointConfiguration$MethodEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/SingleEndpointConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/task-api/target/classes/pwr/kgl/taskapi/FirstEndpoint.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformations.scala" afterPath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_12_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_12_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-server/discovery-server.iml" afterPath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/pom.xml" afterPath="$PROJECT_DIR$/service-generator/spring-server/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/BaseMathApi.java" afterPath="$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/BaseMathApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/ServicesApiController.java" afterPath="$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/ServicesApiController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/swagger-spring.iml" afterPath="$PROJECT_DIR$/service-generator/spring-server/swagger-spring.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/application.properties" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/pom.xml" afterPath="$PROJECT_DIR$/task-api/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java" afterPath="$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/task-api/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala" afterPath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala" afterPath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/task-api.iml" afterPath="$PROJECT_DIR$/task-api/task-api.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/discovery-server/target/" />
@@ -46,45 +68,88 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="pwr-bachelor-microservices" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ServicesDiscovery.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ServicesDiscovery.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="27" column="105" lean-forward="false" selection-start-line="27" selection-start-column="105" selection-end-line="27" selection-end-column="105" />
+            <state relative-caret-position="504">
+              <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
               <folding>
-                <element signature="e#25#90#0" expanded="true" />
+                <element signature="e#25#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataModels.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala">
+      <file leaf-file-name="SwaggerDocumentationConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/configuration/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties">
+      <file leaf-file-name="ServicesApiController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/ServicesApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state relative-caret-position="18">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServicesInformations.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformations.scala">
+      <file leaf-file-name="BaseMathApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/BaseMathApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="180">
+              <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestMapping.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1474">
+              <caret line="302" column="18" lean-forward="false" selection-start-line="302" selection-start-column="18" selection-end-line="302" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvocableHandlerMethod.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="213" column="29" lean-forward="true" selection-start-line="213" selection-start-column="29" selection-end-line="213" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServicesInformationsApi.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="e#25#54#0" expanded="true" />
               </folding>
@@ -92,11 +157,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Serialization.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3.jar!/org/json4s/jackson/Serialization.class">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task-api/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="103" lean-forward="true" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskApiApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -128,9 +203,21 @@
       <find>2.</find>
       <find>eureka</find>
       <find>front</find>
-      <find>port</find>
       <find>scala</find>
       <find>c</find>
+      <find>localhost</find>
+      <find>port</find>
+      <find>endpoints</find>
+      <find>println</find>
+      <find>mat</find>
+      <find>HttpMethod</find>
+      <find>java.version</find>
+      <find>java.</find>
+      <find>javacTas</find>
+      <find>source</find>
+      <find>target</find>
+      <find>service_name</find>
+      <find>json</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,7 +332,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service-generator/spring-server/pom.xml" />
         <option value="$PROJECT_DIR$/micro-frontend/src/server.js" />
         <option value="$PROJECT_DIR$/micro-frontend/package.json" />
         <option value="$PROJECT_DIR$/task-api/project/Dependencies.scala" />
@@ -262,13 +348,17 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java" />
         <option value="$PROJECT_DIR$/task-api/pom.xml" />
-        <option value="$PROJECT_DIR$/task-api/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/AppConfig.scala" />
-        <option value="$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/FirstEndpoint.scala" />
         <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformations.scala" />
         <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala" />
+        <option value="$PROJECT_DIR$/service-generator/spring-server/pom.xml" />
+        <option value="$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/ServicesApiController.java" />
+        <option value="$PROJECT_DIR$/task-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/BaseMathApi.java" />
         <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala" />
+        <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala" />
       </list>
     </option>
   </component>
@@ -328,16 +418,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.20" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-8.5.20.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-8.5.20.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.20" type="70bed36:NamedLibraryElementNode" />
+              <item name="tomcat-embed-core-8.5.20.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="apache" type="462c0819:PsiDirectoryNode" />
+              <item name="coyote" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
@@ -360,42 +474,99 @@
             <path>
               <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.cloud:spring-cloud-commons:1.2.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.cloud:spring-cloud-commons:1.2.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-cloud-commons-1.2.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.cloud:spring-cloud-commons:1.2.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-cloud-commons-1.2.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.cloud:spring-cloud-commons:1.2.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-cloud-commons-1.2.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.cloud:spring-cloud-commons:1.2.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-cloud-commons-1.2.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.9.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.9.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="method" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pwr-bachelor-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="method" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -975,7 +1146,9 @@
       <workItem from="1507891890518" duration="2582000" />
       <workItem from="1508142070099" duration="52000" />
       <workItem from="1510053467844" duration="9640000" />
-      <workItem from="1510126963388" duration="4693000" />
+      <workItem from="1510126963388" duration="8955000" />
+      <workItem from="1510209676590" duration="599000" />
+      <workItem from="1510210647527" duration="17303000" />
     </task>
     <task id="LOCAL-00001" summary="added task api">
       <created>1507057716015</created>
@@ -1012,11 +1185,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507893934360</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task apiv1">
+      <created>1510141023899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1510141023900</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30046000" />
+    <option name="totallyTimeSpent" value="52210000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1032,7 +1212,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15731573" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1048,16 +1228,17 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50165015" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4620462" sideWeight="0.4978701" order="7" side_tool="false" content_ui="combo" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27529287" sideWeight="0.51265126" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6281628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62046206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6281628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27795526" sideWeight="0.48734874" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1066,7 +1247,6 @@
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1112,10 +1292,27 @@
     <MESSAGE value="added task api2" />
     <MESSAGE value="added task api3" />
     <MESSAGE value="fix for frontend?" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix for frontend?" />
+    <MESSAGE value="task apiv1" />
+    <option name="LAST_COMMIT_MESSAGE" value="task apiv1" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1123,54 +1320,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery-server/discovery-server.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task-api/task-api.iml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1-sources.jar!/com/sun/jersey/client/apache4/ApacheHttpClient4Handler.java" />
-    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/example/Hello.scala" />
-    <entry file="file://$PROJECT_DIR$/task-api/src/test/scala/example/HelloSpec.scala" />
-    <entry file="file://$PROJECT_DIR$/tasks-api/build.gradle" />
-    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/TaskApiApplication.scala" />
-    <entry file="file://$PROJECT_DIR$/task-api/project/Dependencies.scala" />
-    <entry file="file://$PROJECT_DIR$/task-api/project/build.properties" />
-    <entry file="file://$PROJECT_DIR$/task-api/build.sbt" />
-    <entry file="file://$PROJECT_DIR$/tasks-api/src/main/java/pwr/kgl/tasksapi/TasksApiApplication.java" />
     <entry file="file://$PROJECT_DIR$/task-api/src/test/java/pwr/kgl/taskapi/FirstEndpointTests.java" />
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/1.5.7.RELEASE/spring-boot-dependencies-1.5.7.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
@@ -1224,28 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/ServicesApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/BaseMathApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="81" column="68" lean-forward="false" selection-start-line="81" selection-start-column="68" selection-end-line="81" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/discovery-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
@@ -1285,7 +1412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,32 +1429,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/Swagger2SpringBoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.6.2/eureka-client-1.6.2-sources.jar!/com/netflix/discovery/DiscoveryClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8226">
           <caret line="544" column="24" lean-forward="false" selection-start-line="544" selection-start-column="24" selection-end-line="544" selection-end-column="24" />
-          <folding>
-            <element signature="e#23901#23902#0" expanded="false" />
-            <element signature="e#23945#23946#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1336,7 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1746">
           <caret line="143" column="11" lean-forward="false" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,25 +1447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery-server/src/main/java/pwr/kgl/discoveryserver/DiscoveryServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task-api/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,17 +1454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1394,46 +1467,234 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3.jar!/org/json4s/jackson/Serialization.class">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/net/URI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="490" column="19" lean-forward="true" selection-start-line="490" selection-start-column="19" selection-end-line="490" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.2.4.RELEASE/spring-cloud-commons-1.2.4.RELEASE.jar!/org/springframework/cloud/client/ServiceInstance.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery-server/src/main/java/pwr/kgl/discoveryserver/DiscoveryServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-core_2.12/3.5.3/json4s-core_2.12-3.5.3.jar!/org/json4s/ExtractableJsonAstNode.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="103" lean-forward="true" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar!/scala/Tuple2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="89" lean-forward="false" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar!/scala/package.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/http/HttpEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="79" column="11" lean-forward="false" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+          <folding>
+            <element signature="e#2497#2498#0" expanded="false" />
+            <element signature="e#2520#2521#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="544" column="63" lean-forward="true" selection-start-line="544" selection-start-column="63" selection-end-line="544" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformations.scala">
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/Swagger2SpringBoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="133">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/model/ServiceInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-406">
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding>
-            <element signature="e#25#54#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="false" />
+            <element signature="e#1159#1160#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/model/SingleEndpointConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/ServicesApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3.jar!/org/json4s/jackson/Serialization.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20-sources.jar!/org/apache/coyote/AbstractProcessorLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="213" column="29" lean-forward="true" selection-start-line="213" selection-start-column="29" selection-end-line="213" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/configuration/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1474">
+          <caret line="302" column="18" lean-forward="false" selection-start-line="302" selection-start-column="18" selection-end-line="302" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/ServicesApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/api/BaseMathApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="27" column="105" lean-forward="false" selection-start-line="27" selection-start-column="105" selection-end-line="27" selection-end-column="105" />
+        <state relative-caret-position="504">
+          <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
           <folding>
-            <element signature="e#25#90#0" expanded="true" />
+            <element signature="e#25#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="e#25#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1491,11 +1752,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>task-api</last-edited>
+          <last-edited>swagger-spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
