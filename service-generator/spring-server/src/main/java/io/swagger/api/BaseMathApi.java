@@ -12,6 +12,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * Created by kgl on 21.09.17.
@@ -24,6 +26,7 @@ public class BaseMathApi {
         serviceInformation
                 .addEndpointsItem(this.SQRT)
                 .addEndpointsItem(this.ADD)
+                .addEndpointsItem(this.SQRT_FILE)
         ;
     }
 
@@ -51,6 +54,32 @@ public class BaseMathApi {
     )
     public ResponseEntity<SqrtResponse> sqrt(@RequestBody SqrtJson json) {
         Float result = new Float(Math.sqrt(json.val));
+        return new ResponseEntity<>(SqrtResponse.builder().res(result).build(), HttpStatus.OK);
+    }
+
+
+    private static final SingleEndpointConfiguration SQRT_FILE = new SingleEndpointConfiguration()
+            .path(SQRT_PATH).name("sqrt-file").method(SingleEndpointConfiguration.MethodEnum.POST)
+            .consumes("multipart/form-data")
+            .produces("application/json")
+            .addInputItem(new FieldDefinition().name("file").type(FieldDefinition.TypeEnum.FILE).required(true).additionalDescription("File contain only number"))
+            .addOutputItem(new FieldDefinition().name("res").type(FieldDefinition.TypeEnum.FLOAT).required(true));
+
+
+    @RequestMapping(value = SQRT_PATH,
+            consumes = {"multipart/form-data"},
+            produces = {"application/json"},
+            method = RequestMethod.POST
+    )
+    public ResponseEntity<SqrtResponse> sqrtForFile(@RequestPart MultipartFile file) {
+        Float result;
+        try {
+            String content = new String(file.getBytes(), "UTF-8").trim();
+            result = new Float(Math.sqrt(Double.parseDouble(content)));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+        }
         return new ResponseEntity<>(SqrtResponse.builder().res(result).build(), HttpStatus.OK);
     }
 

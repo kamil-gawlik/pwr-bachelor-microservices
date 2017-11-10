@@ -102,6 +102,12 @@ definitions:
         type: array
         items:
           $ref: '#/definitions/FieldDefinition'
+      consumes:
+        description: Content type of consumed input - default "application/json"
+        type: string
+      produces:
+        description: Content type of output - "application/json"
+        type: string
   FieldDefinition:
     type: object
     required:

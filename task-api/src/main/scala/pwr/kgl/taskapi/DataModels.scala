@@ -7,7 +7,9 @@ case class SingleEndpointConfiguration(
                                         val path: String,
                                         val method: String,
                                         val input: List[FieldDefinition],
-                                        val output: List[FieldDefinition]
+                                        val output: List[FieldDefinition],
+                                        consumes: Option[String],
+                                        produces: Option[String]
                                       )
 
 case class FieldDefinition(

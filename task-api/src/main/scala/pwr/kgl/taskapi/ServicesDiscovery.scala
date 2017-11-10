@@ -2,13 +2,14 @@ package pwr.kgl.taskapi
 
 import java.net.URI
 
-import com.netflix.ribbon.proxy.annotation.Http.HttpMethod
-import org.springframework.cloud.client.discovery.DiscoveryClient
-import org.springframework.stereotype.Service
-import org.springframework.web.client.RestTemplate
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
-import org.springframework.http.{HttpEntity, HttpHeaders, MediaType, ResponseEntity}
+import org.springframework.cloud.client.discovery.DiscoveryClient
+import org.springframework.http.{HttpEntity, HttpHeaders, MediaType}
+import org.springframework.stereotype.Service
+import org.springframework.util.{LinkedMultiValueMap, MultiValueMap}
+import org.springframework.web.client.RestTemplate
+import org.springframework.web.multipart.MultipartFile
 
 import scala.collection.JavaConverters._
 
@@ -63,18 +64,30 @@ class ServicesDiscovery(val dc: DiscoveryClient) {
 
   def sendTask(service: String, endpointName: String, task: String) = {
     val url = "%s/%s".format(getRegisteredServiceUri(service), endpointName)
-    val endpointMethod = getServiceSingleEndpoint(service, endpointName).method
-    endpointMethod.toLowerCase match {
+    val endpoint = getServiceSingleEndpoint(service, endpointName)
+    endpoint.method.toLowerCase match {
       case "get" => rt.getForEntity(url, classOf[String])
       case "post" => {
         val headers = new HttpHeaders()
-        headers.setContentType(MediaType.APPLICATION_JSON)
         val entity = new HttpEntity[String](task, headers)
         rt.postForEntity(url, entity, classOf[String])
       }
-      case _ => throw new NotImplementedError("No implementation for method %s".format(endpointMethod))
+      case _ => throw new NotImplementedError("No implementation for method %s".format(endpoint.method))
     }
   }
+
+//  def sendTask(service: String, endpointName: String, task: String, file: MultipartFile) = {
+//    val url = "%s/%s".format(getRegisteredServiceUri(service), endpointName)
+//    val headers = new HttpHeaders()
+//    val lMap: MultiValueMap[String, Object] = LinkedMultiValueMap[String, Object]
+//    val endpoint = getServiceSingleEndpoint(service, endpointName)
+//    endpoint.input.map(i=>
+//     lMap.add(i.name)
+//    )
+//
+//    val entity = new HttpEntity[String](task, headers)
+//    rt.postForEntity(url, entity, classOf[String])
+//  }
 
 }
 
