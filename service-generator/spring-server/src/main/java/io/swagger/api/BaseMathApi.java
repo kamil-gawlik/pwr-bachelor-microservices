@@ -1,5 +1,7 @@
 package io.swagger.api;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.model.FieldDefinition;
 import io.swagger.model.ServiceInformation;
 import io.swagger.model.SingleEndpointConfiguration;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 /**
  * Created by kgl on 21.09.17.
@@ -63,7 +67,8 @@ public class BaseMathApi {
             .consumes("multipart/form-data")
             .produces("application/json")
             .addInputItem(new FieldDefinition().name("file").type(FieldDefinition.TypeEnum.FILE).required(true).additionalDescription("File contain only number"))
-            .addOutputItem(new FieldDefinition().name("res").type(FieldDefinition.TypeEnum.FLOAT).required(true));
+            .addInputItem(new FieldDefinition().name("round").type(FieldDefinition.TypeEnum.INT).required(false).additionalDescription("Round result (1-true, 0-false)."))
+            .addOutputItem(new FieldDefinition().name("res").type(FieldDefinition.TypeEnum.FILE).required(true));
 
 
     @RequestMapping(value = SQRT_PATH,
@@ -71,14 +76,16 @@ public class BaseMathApi {
             produces = {"application/json"},
             method = RequestMethod.POST
     )
-    public ResponseEntity<SqrtResponse> sqrtForFile(@RequestPart MultipartFile file) {
+    public ResponseEntity<SqrtResponse> sqrtForFile(@RequestPart MultipartFile file, @RequestPart(required = false) String task) throws IOException {
         Float result;
-        try {
-            String content = new String(file.getBytes(), "UTF-8").trim();
-            result = new Float(Math.sqrt(Double.parseDouble(content)));
-        } catch (Exception e) {
-            e.printStackTrace();
-            return new ResponseEntity<>(HttpStatus.NOT_ACCEPTABLE);
+        String content = new String(file.getBytes(), "UTF-8").trim();
+        result = new Float(Math.sqrt(Double.parseDouble(content)));
+        if (task != null) {
+            JsonNode json = new ObjectMapper().readTree(task);
+            boolean round = json.get("round").intValue() == 1 ? true : false;
+            if (round) {
+                result = new Float(result.intValue());
+            }
         }
         return new ResponseEntity<>(SqrtResponse.builder().res(result).build(), HttpStatus.OK);
     }

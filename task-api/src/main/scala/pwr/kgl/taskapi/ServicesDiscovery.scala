@@ -1,11 +1,13 @@
 package pwr.kgl.taskapi
 
+import java.io.File
 import java.net.URI
 
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 import org.springframework.cloud.client.discovery.DiscoveryClient
-import org.springframework.http.{HttpEntity, HttpHeaders, MediaType}
+import org.springframework.core.io.FileSystemResource
+import org.springframework.http.{HttpEntity, HttpHeaders, HttpMethod, MediaType}
 import org.springframework.stereotype.Service
 import org.springframework.util.{LinkedMultiValueMap, MultiValueMap}
 import org.springframework.web.client.RestTemplate
@@ -76,19 +78,29 @@ class ServicesDiscovery(val dc: DiscoveryClient) {
     }
   }
 
-//  def sendTask(service: String, endpointName: String, task: String, file: MultipartFile) = {
-//    val url = "%s/%s".format(getRegisteredServiceUri(service), endpointName)
-//    val headers = new HttpHeaders()
-//    val lMap: MultiValueMap[String, Object] = LinkedMultiValueMap[String, Object]
-//    val endpoint = getServiceSingleEndpoint(service, endpointName)
-//    endpoint.input.map(i=>
-//     lMap.add(i.name)
-//    )
-//
-//    val entity = new HttpEntity[String](task, headers)
-//    rt.postForEntity(url, entity, classOf[String])
-//  }
+  def sendTask(service: String, endpointName: String, task: String, file: MultipartFile) = {
+    val url = "%s/%s".format(getRegisteredServiceUri(service), endpointName)
+    val lMap = new LinkedMultiValueMap[String, Object]
+    if (file != null) {
+      val tmpFile: File = createTmpFile(file)
+      lMap.add("file", new FileSystemResource(tmpFile))
+    }
+    if (task != null) {
+      lMap.add("task", task)
+    }
+    val headers = new HttpHeaders()
+    headers.setContentType(MediaType.MULTIPART_FORM_DATA)
+    val entity = new HttpEntity[MultiValueMap[String, Object]](lMap, headers)
 
+    rt.postForEntity(url, entity, classOf[String])
+  }
+
+  def createTmpFile(file: MultipartFile): File = {
+    val extension = "." + file.getOriginalFilename.split('.').last
+    val tempFile: File = File.createTempFile("temp", extension)
+    file.transferTo(tempFile)
+    tempFile
+  }
 }
 
 

@@ -45,8 +45,7 @@ class ServicesInformationsApi(val sd: ServicesDiscovery) {
                          @RequestPart task: String,
                          @RequestPart(required = false) @Nullable file: MultipartFile
                         ): ResponseEntity[String] = {
-    val res = sd.sendTask(service, endpointName, task)
-    res
+    sd.sendTask(service, endpointName, task)
   }
 
   @RequestMapping(
@@ -57,11 +56,9 @@ class ServicesInformationsApi(val sd: ServicesDiscovery) {
   )
   def sendTaskToEndpointWithFile(@PathVariable service: String, @PathVariable endpointName: String,
                                  @RequestPart(required = false) @Nullable file: MultipartFile,
-                                 @RequestPart task: String,
+                                 @RequestPart(required = false) task: String,
                                 ): ResponseEntity[String] = {
-    println(task.mkString(", "))
-    //val res = sd.sendTask(service, endpointName, task, file)
-    //res
-    new ResponseEntity[String]("das", HttpStatus.OK)
+    sd.sendTask(service, endpointName, task, file)
   }
+
 }
