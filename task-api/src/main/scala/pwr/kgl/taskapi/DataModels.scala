@@ -18,3 +18,5 @@ case class FieldDefinition(
                             val required: Boolean,
                             val additional_description: Option[String]
                           )
+
+case class ShortInfo(name:String, endpoints:List[String])

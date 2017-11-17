@@ -1,0 +1,26 @@
+<div class="single-endpoint" *ngIf="endpoint">
+  <mat-list>
+    <mat-list-item>
+      <h3>{{endpoint.name}}</h3>
+    </mat-list-item>
+    <mat-list-item>path: {{endpoint.path}}</mat-list-item>
+    <mat-list-item>method: {{endpoint.method}}</mat-list-item>
+    <mat-list-item *ngIf="endpoint && endpoint.consumes">consumes: {{endpoint.consumes}}</mat-list-item>
+    <mat-list-item *ngIf="endpoint && endpoint.produces">produces: {{endpoint.produces}}</mat-list-item>
+    <mat-list-item *ngFor="let i of endpoint?.input">
+      <p matLine>Input:</p>
+      <p matLine>name {{i.name}}</p>
+      <p matLine>type: {{i.type}}</p>
+      <p matLine>required: {{i.required}}</p>
+      <p matLine *ngIf="i && i.additional_description">type{{i.additional_description}}</p>
+    </mat-list-item>
+    <mat-list-item *ngFor="let i of endpoint.output">
+      <p matLine>Output:</p>
+      <p matLine>name {{i.name}}</p>
+      <p matLine>type: {{i.type}}</p>
+      <p matLine>required: {{i.required}}</p>
+      <p matLine *ngIf="i &&  i.additional_description">type{{i.additional_description}}</p>
+    </mat-list-item>
+  </mat-list>
+
+</div>

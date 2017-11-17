@@ -17,24 +17,28 @@ import org.springframework.web.multipart.MultipartFile
 class ServicesInformationsApi(val sd: ServicesDiscovery) {
   implicit val formats = Serialization.formats(NoTypeHints)
 
+  @CrossOrigin
   @RequestMapping(value = Array("/services"), method = Array(RequestMethod.GET), produces = Array("application/json"))
   def getServicesNames: ResponseEntity[String] = {
     val res = write(sd.getAllRegisteredServicesWithEndpointsNames)
     new ResponseEntity(res, HttpStatus.OK)
   }
 
+  @CrossOrigin
   @RequestMapping(value = Array("/services/{service}"), method = Array(RequestMethod.GET), produces = Array("application/json"))
   def getServiceEndpoints(@PathVariable service: String): ResponseEntity[String] = {
-    val res = write(sd.getServiceEndpoints(service))
+    val res = write(sd.getServiceEndpoints(service).getOrElse("No services available for %s service".format(service)))
     new ResponseEntity(res, HttpStatus.OK)
   }
 
+  @CrossOrigin
   @RequestMapping(value = Array("/services/{service}/{endpointName}"), method = Array(RequestMethod.GET), produces = Array("application/json"))
   def getServiceEndpoint(@PathVariable service: String, @PathVariable endpointName: String): ResponseEntity[String] = {
     val res = write(sd.getServiceSingleEndpoint(service, endpointName))
     new ResponseEntity(res, HttpStatus.OK)
   }
 
+  @CrossOrigin
   @RequestMapping(
     value = Array("/services/{service}/{endpointName}"),
     method = Array(RequestMethod.POST),
@@ -48,6 +52,7 @@ class ServicesInformationsApi(val sd: ServicesDiscovery) {
     sd.sendTask(service, endpointName, task)
   }
 
+  @CrossOrigin
   @RequestMapping(
     value = Array("/services/{service}/{endpointName}"),
     method = Array(RequestMethod.POST),

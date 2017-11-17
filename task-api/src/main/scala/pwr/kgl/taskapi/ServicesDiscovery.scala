@@ -7,7 +7,7 @@ import org.json4s._
 import org.json4s.jackson.JsonMethods._
 import org.springframework.cloud.client.discovery.DiscoveryClient
 import org.springframework.core.io.FileSystemResource
-import org.springframework.http.{HttpEntity, HttpHeaders, HttpMethod, MediaType}
+import org.springframework.http.{HttpEntity, HttpHeaders, MediaType}
 import org.springframework.stereotype.Service
 import org.springframework.util.{LinkedMultiValueMap, MultiValueMap}
 import org.springframework.web.client.RestTemplate
@@ -25,7 +25,7 @@ class ServicesDiscovery(val dc: DiscoveryClient) {
   implicit val formats = DefaultFormats
 
 
-  def getAllServicesNames: List[String] = dc.getServices().asScala.toList
+  def getAllServicesNames: List[String] = dc.getServices().asScala.toList.filter(_ != "frontend").filter(_ != "task-api")
 
   //  def getRegisteredServices = getAllServicesNames.map {
   //    app => dc.getInstances(app).get(0)
@@ -39,10 +39,16 @@ class ServicesDiscovery(val dc: DiscoveryClient) {
     dc.getInstances(service).asScala.toList.map(s => s.getUri)
   }
 
-  def getServiceEndpoints(service: String): ServiceInformation = {
+  def getServiceEndpoints(service: String): Option[ServiceInformation] = {
     val url: String = getRegisteredServiceUri(service) + SERVICE_ENDPOINTS_DEFINITIONS
-    val response = rt.getForObject(url, classOf[String])
-    parse(response).extract[ServiceInformation]
+    var response: String = ""
+    try {
+      response = rt.getForObject(url, classOf[String])
+    } catch {
+      case _: Exception => println("No services available for %s, skipping".format(service));
+        return None
+    }
+    return Some(parse(response).extract[ServiceInformation])
   }
 
   def getServiceSingleEndpoint(service: String, endpointName: String) = {
@@ -53,14 +59,19 @@ class ServicesDiscovery(val dc: DiscoveryClient) {
   }
 
   def getAllRegisteredServicesWithEndpoints: List[(String, ServiceInformation)] = {
-    getAllServicesNames.map { service => (service -> getServiceEndpoints(service)) }
+    getAllServicesNames.flatMap { service =>
+      getServiceEndpoints(service) match {
+        case Some(endpoints) => Some(service -> endpoints)
+        case _ => None
+      }
+    }
   }
 
-  def getAllRegisteredServicesWithEndpointsNames: List[(String, List[(String, String)])] = {
+  def getAllRegisteredServicesWithEndpointsNames: List[ShortInfo] = {
     getAllRegisteredServicesWithEndpoints.map { a =>
       val serviceName = a._1
-      val endpointsNames = a._2.endpoints.map { endpoint: SingleEndpointConfiguration => (endpoint.name -> endpoint.path) }
-      (serviceName -> endpointsNames)
+      val endpointsNames = a._2.endpoints.map { endpoint: SingleEndpointConfiguration => endpoint.name }
+      ShortInfo(serviceName, endpointsNames)
     }
   }
 
