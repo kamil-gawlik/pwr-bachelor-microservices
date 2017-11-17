@@ -1,46 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c18e4b68-2453-49b7-b552-404e55ecf521" name="Default" comment="fdasdsa">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/micro-frontend/src/app/datamodels.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service-generator/nodejs-server-server/nodejs-server-server.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service-generator/python-flask-server/python-flask-server.iml" />
+    <list default="true" id="c18e4b68-2453-49b7-b552-404e55ecf521" name="Default" comment="front">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/micro-frontend/src/app/app-routing.module.ts" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/AppConfig.scala" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/RFC3339DateFormat.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/RFC3339DateFormat.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/Swagger2SpringBoot$ExitException.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/Swagger2SpringBoot$ExitException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/Swagger2SpringBoot.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/Swagger2SpringBoot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiException.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiOriginFilter.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiOriginFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiResponseMessage.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ApiResponseMessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddJson.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddJson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddReponse$AddReponseBuilder.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddReponse$AddReponseBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddReponse.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$AddReponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtJson.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtJson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtResponse$SqrtResponseBuilder.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtResponse$SqrtResponseBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtResponse.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi$SqrtResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/BaseMathApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/NotFoundException.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/NotFoundException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ServicesApi.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ServicesApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ServicesApiController.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/api/ServicesApiController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/configuration/HomeController.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/configuration/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/configuration/SwaggerDocumentationConfig.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/configuration/SwaggerDocumentationConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/FieldDefinition$TypeEnum.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/FieldDefinition$TypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/FieldDefinition.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/FieldDefinition.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/ServiceInformation.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/ServiceInformation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/SingleEndpointConfiguration$MethodEnum.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/SingleEndpointConfiguration$MethodEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/SingleEndpointConfiguration.class" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/io/swagger/model/SingleEndpointConfiguration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/target/classes/pwr/kgl/taskapi/TaskApiApplication.class" afterPath="$PROJECT_DIR$/task-api/target/classes/pwr/kgl/taskapi/TaskApiApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-server/discovery-server.iml" afterPath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-server/pom.xml" afterPath="$PROJECT_DIR$/discovery-server/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-server/target/classes/application.properties" afterPath="$PROJECT_DIR$/discovery-server/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micro-frontend/package.json" afterPath="$PROJECT_DIR$/micro-frontend/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micro-frontend/server.js" afterPath="$PROJECT_DIR$/micro-frontend/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micro-frontend/src/app/app.component.css" afterPath="$PROJECT_DIR$/micro-frontend/src/app/app.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micro-frontend/src/app/app.component.html" afterPath="$PROJECT_DIR$/micro-frontend/src/app/app.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micro-frontend/src/app/app.module.ts" afterPath="$PROJECT_DIR$/micro-frontend/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micro-frontend/src/styles.css" afterPath="$PROJECT_DIR$/micro-frontend/src/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/service-generator/spring-server/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-generator/spring-server/target/classes/application.properties" afterPath="$PROJECT_DIR$/service-generator/spring-server/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micro-frontend/src/app/datamodels.ts" afterPath="$PROJECT_DIR$/micro-frontend/src/app/datamodels.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/pom.xml" afterPath="$PROJECT_DIR$/task-api/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java" afterPath="$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task-api/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/task-api/src/main/resources/application.properties" />
@@ -83,8 +56,8 @@
       <file leaf-file-name="servicesdata.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/services/servicesdata.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="486">
+              <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -92,13 +65,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.ts">
+      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="198">
+              <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servicedetails.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servicedetails.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servicedetails.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datamodels.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/datamodels.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="servicedetails.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,73 +143,18 @@
         <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+              <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServicesDiscovery.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
-              <folding>
-                <element signature="e#25#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datamodels.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/datamodels.ts">
+      <file leaf-file-name="navbar.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataModels.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServicesInformationsApi.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/micro-frontend/src/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="61" lean-forward="false" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskApiApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-              <folding>
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1183#1184#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -190,17 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>javacTas</find>
-      <find>source</find>
-      <find>target</find>
-      <find>service_name</find>
-      <find>json</find>
-      <find>SleepingCellFunctionalTests</find>
-      <find>prod</find>
-      <find>consu</find>
-      <find>consumes</find>
-      <find>TA</find>
-      <find>No services available for frontend, skippin</find>
       <find>No services available for fronten, skippin</find>
       <find>No services available for fronte, skippin</find>
       <find>No services available for front, skippin</find>
@@ -220,6 +189,17 @@
       <find>kgl-</find>
       <find>kgl-ux</find>
       <find>HttpC</find>
+      <find>matLine</find>
+      <find>gotoDetails</find>
+      <find>+pa</find>
+      <find>gotoDetail</find>
+      <find>consumes</find>
+      <find>endpoint</find>
+      <find>produces</find>
+      <find>input</find>
+      <find>goToDetails</find>
+      <find>inp</find>
+      <find>in</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -355,9 +335,7 @@
         <option value="$PROJECT_DIR$/service-generator/nodejs-server-server/controllers/Services.js" />
         <option value="$PROJECT_DIR$/service-generator/nodejs-server-server/controllers/ServicesService.js" />
         <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
-        <option value="$PROJECT_DIR$/micro-frontend/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/micro-frontend/package.json" />
-        <option value="$PROJECT_DIR$/micro-frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/task-api/pom.xml" />
         <option value="$PROJECT_DIR$/micro-frontend/server.js" />
         <option value="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" />
@@ -367,12 +345,20 @@
         <option value="$PROJECT_DIR$/task-api/src/main/java/pwr/kgl/taskapi/TaskApiApplication.java" />
         <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala" />
         <option value="$PROJECT_DIR$/micro-frontend/src/styles.css" />
-        <option value="$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala" />
         <option value="$PROJECT_DIR$/micro-frontend/src/app/services/servicesdata.service.ts" />
         <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala" />
-        <option value="$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala" />
         <option value="$PROJECT_DIR$/micro-frontend/src/app/datamodels.ts" />
         <option value="$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.css" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.css" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.html" />
+        <option value="$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.ts" />
       </list>
     </option>
   </component>
@@ -444,6 +430,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="task-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pwr-bachelor-microservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taskapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pwr-bachelor-microservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pwr-bachelor-microservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="micro-frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -477,6 +517,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pwr-bachelor-microservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="micro-frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servicedetails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pwr-bachelor-microservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="micro-frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navbar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1226,7 +1310,7 @@
       <workItem from="1510851468251" duration="275000" />
       <workItem from="1510908951945" duration="9939000" />
       <workItem from="1510919296983" duration="9194000" />
-      <workItem from="1510928691614" duration="6037000" />
+      <workItem from="1510928691614" duration="15991000" />
     </task>
     <task id="LOCAL-00001" summary="added task api">
       <created>1507057716015</created>
@@ -1284,11 +1368,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510322908502</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fdasdsa">
+      <created>1510934769639</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510934769639</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105544000" />
+    <option name="totallyTimeSpent" value="115498000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1380,7 +1471,8 @@
     <MESSAGE value="working first version of task api" />
     <MESSAGE value="nearly working files" />
     <MESSAGE value="fdasdsa" />
-    <option name="LAST_COMMIT_MESSAGE" value="fdasdsa" />
+    <MESSAGE value="front" />
+    <option name="LAST_COMMIT_MESSAGE" value="front" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1407,78 +1499,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/File.java" />
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/model/SingleEndpointConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/RFC3339DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/configuration/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/http/converter/FormHttpMessageConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="361" column="36" lean-forward="false" selection-start-line="361" selection-start-column="28" selection-end-line="361" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE-sources.jar!/org/springframework/core/io/FileSystemResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="57" column="11" lean-forward="false" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-generator/spring-server/src/main/java/io/swagger/Swagger2SpringBoot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/http/HttpEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="96" column="11" lean-forward="false" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/http/MediaType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="190" column="34" lean-forward="false" selection-start-line="190" selection-start-column="34" selection-end-line="190" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery-server/src/main/java/pwr/kgl/discoveryserver/DiscoveryServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-generator/python-flask-server/swagger_server/controllers/services_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1600,16 +1620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#56#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/micro-frontend/node_modules/@angular/http/src/http.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1725,14 +1735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/micro-frontend/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1741,25 +1743,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/services/servicesdata.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala">
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1769,13 +1753,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesInformationsApi.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="183">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="e#25#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/DataModels.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/node_modules/@angular/router/src/router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="292" column="4" lean-forward="false" selection-start-line="292" selection-start-column="4" selection-end-line="292" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+            <marker date="1510944124726" expanded="true" signature="916:929" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/node_modules/@angular/router/src/shared.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/services/servicesdata.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/datamodels.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1783,20 +1856,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task-api/src/main/scala/pwr/kgl/taskapi/ServicesDiscovery.scala">
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+        <state relative-caret-position="198">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#44#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/navbar/navbar.component.ts">
+    <entry file="file://$PROJECT_DIR$/micro-frontend/src/app/servicedetails/servicedetails.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
