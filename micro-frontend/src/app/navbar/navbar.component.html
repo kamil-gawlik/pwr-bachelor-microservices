@@ -1,10 +1,13 @@
 <div class="menu">
-  <mat-nav-list>
-    <mat-list-item *ngFor="let s of services">
-      <h2 matLine> {{s.name}}</h2>
-      <mat-list-item *ngFor="let e of s.endpoints" matLine (click)="goToDetails(s.name,e)">
-        {{e}}
+  <mat-card>
+    <mat-card-subtitle>Available services</mat-card-subtitle>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let s of services">
+        <h2 matLine> {{s.name}}</h2>
+        <mat-list-item *ngFor="let e of s.endpoints" matLine (click)="goToDetails(s.name,e)">
+          {{e}}
+        </mat-list-item>
       </mat-list-item>
-    </mat-list-item>
-  </mat-nav-list>
+    </mat-nav-list>
+  </mat-card>
 </div>

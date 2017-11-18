@@ -1,13 +1,14 @@
-.wrapper{
+.wrapper {
   display: flex;
 }
 
-.sidebar{
+.sidebar {
   width: 30%;
 }
 
-.main-container{
+.main-container {
   width: 70%;
   position: relative;
   float: left;
+
 }
