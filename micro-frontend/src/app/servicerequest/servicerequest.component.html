@@ -7,28 +7,42 @@
     <mat-card-subtitle *ngIf="endpoint && endpoint.consumes">consumes: {{endpoint.consumes}}</mat-card-subtitle>
     <mat-card-subtitle *ngIf="endpoint && endpoint.produces">produces: {{endpoint.produces}}</mat-card-subtitle>
 
-    <form class="example-container" formArrayName="options"  (ngSubmit)="submitted.emit(form.value)" > <!--[formGroup]="options">-->
+    <form class="example-container" [formGroup]="options" (ngSubmit)="onSubmit()">
       <mat-list>
         <mat-list-item *ngFor="let i of endpoint?.input">
           <div *ngIf="!isFileType(i)">
             <mat-form-field>
-              <input matInput formControlName="{{i.name}}" placeholder="{{i.name}}: {{i.type}}" (change)="showChanges()">
+              <input matInput formControlName="{{i.name}}" placeholder="{{i.name}}: {{i.type}}"
+                     (change)="showChanges()">
             </mat-form-field>
           </div>
           <div *ngIf="isFileType(i)">
             <button mat-button (click)="imgFileInput.click()">Add {{i.name}}</button>
             <input hidden type="file" #imgFileInput (change)="fileChange($event)"/>
+            <span *ngIf="file">
+              Loaded: {{file.name}}
+            </span>
           </div>
         </mat-list-item>
       </mat-list>
+      <mat-card-actions>
+        <button mat-button (click)="goBack()">
+          Back
+        </button>
+        <button style="float: right" mat-button type="submit">
+          Send task
+        </button>
+      </mat-card-actions>
     </form>
-    <mat-card-actions>
-      <button mat-button (click)="goBack()">
-        Back
-      </button>
-      <button style="float: right" mat-button (click)="send()">
-        Send task
-      </button>
-    </mat-card-actions>
   </mat-card>
+  <div [hidden]="!submitted">
+    <mat-card>
+      Result:
+      <mat-list>
+        <mat-list-item *ngFor="let r of result">
+          {{r['key']}}: {{r['value']}}
+        </mat-list-item>
+      </mat-list>
+    </mat-card>
+  </div>
 </div>

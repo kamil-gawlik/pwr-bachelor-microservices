@@ -57,8 +57,11 @@ public class BaseMathApi {
             method = RequestMethod.POST
     )
     public ResponseEntity<SqrtResponse> sqrt(@RequestBody SqrtJson json) {
-        Float result = new Float(Math.sqrt(json.val));
-        return new ResponseEntity<>(SqrtResponse.builder().res(result).build(), HttpStatus.OK);
+        if (json.val != null) {
+            Float result = new Float(Math.sqrt(json.val));
+            return new ResponseEntity<>(SqrtResponse.builder().res(result).build(), HttpStatus.OK);
+        }
+        return new ResponseEntity<>( HttpStatus.NOT_FOUND);
     }
 
 
@@ -82,9 +85,10 @@ public class BaseMathApi {
         result = new Float(Math.sqrt(Double.parseDouble(content)));
         if (task != null) {
             JsonNode json = new ObjectMapper().readTree(task);
-            boolean round = json.get("round").intValue() == 1 ? true : false;
-            if (round) {
-                result = new Float(result.intValue());
+            Integer round = Integer.parseInt(json.get("round").asText());
+            String formater = "%."+round+"f";
+            if (round!=null) {
+                result = Float.parseFloat(String.format(formater,result));
             }
         }
         return new ResponseEntity<>(SqrtResponse.builder().res(result).build(), HttpStatus.OK);

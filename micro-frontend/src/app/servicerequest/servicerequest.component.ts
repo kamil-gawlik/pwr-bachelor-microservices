@@ -2,9 +2,10 @@ import {Component, OnInit, Output} from '@angular/core';
 import {FieldDefinition, SingleEndpointConfiguration} from "../datamodels";
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {ServicesdataService} from "../services/servicesdata.service";
-import {FormBuilder, FormControl, Validators, FormGroup} from '@angular/forms';
-
+import {FormControl, Validators, FormGroup} from '@angular/forms';
+import {Http, Response, RequestOptions} from '@angular/http';
 import  "rxjs/add/operator/switchMap";
+import "rxjs/add/operator/map";
 
 @Component({
   selector: 'app-servicerequest',
@@ -16,16 +17,43 @@ export class ServicerequestComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute,
               private servicesProvider: ServicesdataService,
               private router: Router,
-              fb: FormBuilder) {
-    // this.options = fb.array([]);
+              private http: Http) {
   }
 
   endpoint: SingleEndpointConfiguration;
   endpointName: string;
   service: string;
-  options: FormGroup;
 
-  upload = {};
+  taskApiUrl: string;
+  options: FormGroup;
+  submitted = false;
+  file = null;
+
+  result;
+
+
+  onSubmit() {
+    this.submitted = true;
+    this.sendTask();
+  }
+
+  private sendTask() {
+    const url = `${this.taskApiUrl}services/${this.service}${this.endpoint.path}`
+    console.log(url)
+    let body;
+    let headers = new Headers();
+    if (this.file !== null) {
+      body = new FormData();
+      body.append('file', this.file, {type: "multipart/form-data"});
+      body.append('task', JSON.stringify(this.options.value))// this.options.value, {type: "application/json"})
+      headers.append('Content-Type', undefined)
+    } else {
+      body = this.options.value
+    }
+    this.http.post(url, body, {headers:headers}).map(r => r.json()).subscribe((res =>
+        this.result = Object.keys(res).map(key => ({key, value: res[key]}))
+    ));
+  }
 
   ngOnInit() {
     this.activatedRoute.params.subscribe((params: Params) => {
@@ -33,8 +61,8 @@ export class ServicerequestComponent implements OnInit {
       this.endpointName = params['endpoint'];
       console.log('creating param')
       this.servicesProvider.getTaskApiUrl().subscribe(res => {
-          const url = res
-          this.servicesProvider.getEndpoint(url, this.service, this.endpointName)
+          this.taskApiUrl = res
+          this.servicesProvider.getEndpoint(this.taskApiUrl, this.service, this.endpointName)
             .subscribe((res: SingleEndpointConfiguration) => {
               console.log(`got endpoint for ${this.service} ${this.endpointName}`);
               this.endpoint = res;
@@ -49,25 +77,22 @@ export class ServicerequestComponent implements OnInit {
     let group: any = {};
 
     fields.forEach(f => {
-      group[f.name] = f.required ? new FormControl(f.name || '', Validators.required)
-        : new FormControl(f.name || '');
+      if (f.type != 'file') {
+        group[f.name] = f.required ? new FormControl('', Validators.required) : new FormControl('');
+      }
     });
     return new FormGroup(group);
   }
 
   fileChange(event: any) {
     for (const file of event.target.files) {
-      this.upload['file'] = file;
+      this.file = file;
     }
-    console.log(this.upload);
+    console.log(this.file);
   }
 
   goBack() {
     this.router.navigate(['details', this.service, this.endpointName], {queryParams: {}});
-  }
-
-  send() {
-
   }
 
   isFileType(i: FieldDefinition): boolean {
@@ -75,6 +100,7 @@ export class ServicerequestComponent implements OnInit {
   }
 
   showChanges() {
-    console.log(this.options)
+    console.log(this.options.value)
   }
+
 }
