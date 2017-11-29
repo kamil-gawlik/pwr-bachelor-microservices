@@ -82,6 +82,7 @@ class ServicesDiscovery(val dc: DiscoveryClient) {
       case "get" => rt.getForEntity(url, classOf[String])
       case "post" => {
         val headers = new HttpHeaders()
+        headers.setContentType(MediaType.APPLICATION_JSON)
         val entity = new HttpEntity[String](task, headers)
         rt.postForEntity(url, entity, classOf[String])
       }

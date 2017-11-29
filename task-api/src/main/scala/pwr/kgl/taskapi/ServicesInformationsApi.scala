@@ -46,8 +46,8 @@ class ServicesInformationsApi(val sd: ServicesDiscovery) {
     consumes = Array("application/json")
   )
   def sendTaskToEndpoint(@PathVariable service: String, @PathVariable endpointName: String,
-                         @RequestPart task: String,
-                         @RequestPart(required = false) @Nullable file: MultipartFile
+                         @RequestBody task: String
+                     //    @RequestPart(required = false) @Nullable file: MultipartFile
                         ): ResponseEntity[String] = {
     sd.sendTask(service, endpointName, task)
   }
@@ -61,7 +61,7 @@ class ServicesInformationsApi(val sd: ServicesDiscovery) {
   )
   def sendTaskToEndpointWithFile(@PathVariable service: String, @PathVariable endpointName: String,
                                  @RequestPart(required = false) @Nullable file: MultipartFile,
-                                 @RequestPart(required = false) task: String,
+                                 @RequestPart(required = false) task: String
                                 ): ResponseEntity[String] = {
     sd.sendTask(service, endpointName, task, file)
   }

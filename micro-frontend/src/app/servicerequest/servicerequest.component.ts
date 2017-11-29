@@ -1,9 +1,9 @@
-import {Component, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FieldDefinition, SingleEndpointConfiguration} from "../datamodels";
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {ServicesdataService} from "../services/servicesdata.service";
 import {FormControl, Validators, FormGroup} from '@angular/forms';
-import {Http, Response, RequestOptions} from '@angular/http';
+import {Http, RequestOptions, Headers} from '@angular/http';
 import  "rxjs/add/operator/switchMap";
 import "rxjs/add/operator/map";
 
@@ -50,7 +50,8 @@ export class ServicerequestComponent implements OnInit {
     } else {
       body = this.options.value
     }
-    this.http.post(url, body, {headers:headers}).map(r => r.json()).subscribe((res =>
+    let options = new RequestOptions({headers: headers});
+    this.http.post(url, body, options).map(r => r.json()).subscribe((res =>
         this.result = Object.keys(res).map(key => ({key, value: res[key]}))
     ));
   }

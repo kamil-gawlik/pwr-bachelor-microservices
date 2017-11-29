@@ -23,22 +23,20 @@ const client = new Eureka({
       name: 'MyOwn',
     },
   },
-/*
-  eureka: {
-    host: 'discovery-service.herokuapp.com',
-    servicePath: '/eureka/apps/',
-    port: '',
-    ssl: true
-  },
-*/
-  eureka: {
+   eureka: {
+   host: 'discovery-service.herokuapp.com',
+   servicePath: '/eureka/apps/',
+   port: '',
+   ssl: true
+   },
+/*  eureka: {
     host: 'localhost',
     servicePath: '/eureka/apps/',
     port: 8761
-  },
+  },*/
 });
 
-function getTaskApi(){
+function getTaskApi() {
   return client.getInstancesByAppId("TASK-API")
 }
 
@@ -46,12 +44,11 @@ function getTaskApi(){
 client.start();
 
 
-
 // If an incoming request uses
 // a protocol other than HTTPS,
 // redirect that request to the
 // same url but with HTTPS
-const forceSSL = function() {
+const forceSSL = function () {
   return function (req, res, next) {
     if (req.headers['x-forwarded-proto'] !== 'https') {
       return res.redirect(
@@ -64,7 +61,8 @@ const forceSSL = function() {
 // Instruct the app
 // to use the forceSSL
 // middleware
-//app.use(forceSSL());
+
+app.use(forceSSL());
 
 // Run the app by serving the static files
 // in the dist directory
@@ -80,10 +78,6 @@ app.get('/task-api', function (req, resp) {
 
 // For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
-app.get('/*', function(req, res) {
+app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
-
-
-
-

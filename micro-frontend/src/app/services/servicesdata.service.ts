@@ -4,7 +4,8 @@ import "rxjs/add/operator/map";
 @Injectable()
 export class ServicesdataService {
 
-  private LOCAL_EUREKA = 'http://127.0.0.1:8090/task-api'
+//  private LOCAL_EUREKA = 'http://127.0.0.1:8090/task-api'
+  private LOCAL_EUREKA = 'https://micro-frontend.herokuapp.com/task-api'
 
   constructor(private http: Http) {
   }
