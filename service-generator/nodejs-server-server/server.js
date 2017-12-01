@@ -10,6 +10,7 @@ app.use(cors())
 const client = new Eureka({
     instance: {
         app: 'fibo',
+        //hostName: 'localhost',
         hostName: 'https://micro-fib.herokuapp.com/',
         ipAddr: '127.0.0.1',
         statusPageUrl: 'https://micro-fib.herokuapp.com//info',
@@ -17,7 +18,7 @@ const client = new Eureka({
             '$': 8080,
             '@enabled': 'true',
         },
-        vipAddress: 'fib',
+        vipAddress: 'fibo',
         dataCenterInfo: {
             '@class': 'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo',
             name: 'MyOwn',
@@ -29,11 +30,13 @@ const client = new Eureka({
        port: '',
        ssl: true
        },
-/*    eureka: {
+/*
+    eureka: {
         host: 'localhost',
         servicePath: '/eureka/apps/',
         port: 8761
-    },*/
+    },
+*/
 });
 
 
@@ -57,6 +60,7 @@ const forceSSL = function () {
 // Instruct the app
 // to use the forceSSL
 // middleware
+
 app.use(forceSSL());
 var jsonParser = bodyParser.json();
 app.listen(process.env.PORT || 8080);
