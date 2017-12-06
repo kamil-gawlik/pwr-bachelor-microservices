@@ -169,5 +169,3 @@ kilkudziesięciu sekund.
 
 4.  Frontend <https://micro-frontend.herokuapp.com>
 
-  [\[section:heroku\]]: #section:heroku {reference-type="ref"
-  reference="section:heroku"}
