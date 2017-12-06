@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="discovery-server" />
+        <module name="gateway" />
         <module name="swagger-spring" />
         <module name="task-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="discovery-server" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="swagger-spring" target="1.8" />
       <module name="task-api" target="1.8" />
     </bytecodeTargetLevel>

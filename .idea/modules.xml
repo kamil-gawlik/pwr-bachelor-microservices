@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro-frontend/micro-frontend.iml" filepath="$PROJECT_DIR$/micro-frontend/micro-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-generator/nodejs-server-server/nodejs-server-server.iml" filepath="$PROJECT_DIR$/service-generator/nodejs-server-server/nodejs-server-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-generator/spring-server/swagger-spring.iml" filepath="$PROJECT_DIR$/service-generator/spring-server/swagger-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/task-api/task-api.iml" filepath="$PROJECT_DIR$/task-api/task-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tasks-api.iml" filepath="$PROJECT_DIR$/.idea/modules/tasks-api.iml" />

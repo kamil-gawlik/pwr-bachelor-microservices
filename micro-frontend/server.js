@@ -10,11 +10,11 @@ app.use(cors())
 const client = new Eureka({
   instance: {
     app: 'frontend',
-    hostName: 'localhost',
+    hostName: 'https://micro-frontend.herokuapp.com',
     ipAddr: '127.0.0.1',
-    statusPageUrl: 'http://localhost:8080/info',
+    statusPageUrl: 'https://micro-frontend.herokuapp.com/info',
     port: {
-      '$': 8090,
+      '$': 443,
       '@enabled': 'true',
     },
     vipAddress: 'frontend',
